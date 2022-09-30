@@ -1,0 +1,26 @@
+.halaman {
+    margin: 20px auto 20px auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.halaman a {
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+.halaman li {
+    list-style: none;
+}
+.halaman li.active a {
+    width: 100%;
+    color: white;
+    background-color: #4CAF50;
+}
+
+.halaman li:hover:not(.active) a {
+    background-color: rgb(236, 8, 8);
+}

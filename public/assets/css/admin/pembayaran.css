@@ -1,0 +1,66 @@
+.pembayaran {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    padding: 0 0 10px 0;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+.pembayaran h2 {
+    margin: 10px 0 10px 0;
+}
+.pembayaran input[type=file] {
+    padding: 12px;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 50%;
+}
+.pembayaran img {
+    width: 80%;
+    margin: 10px 0 10px 0;
+}
+.pembayaran button[type=submit],
+.pembayaran input[type=submit] {
+    background-color: #00e490;
+    color: white;
+    margin: 10px 0px 0px 0px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+.pembayaran button[type=submit]:hover,
+.pembayaran input[type=submit]:hover {
+    background-color: #8cb98e;
+}
+
+.tidak-valid {
+    border: 1px solid red;
+    background-color:rgb(252, 209, 209);
+}
+.tidak-valid-feedback {
+    font-size: 12px;
+    color: red;
+}
+.tombol {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0; 
+}
+.tombol button,
+.tombol a {
+    text-decoration: none;
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: chartreuse;
+    border: 3px solid black;
+    border-radius: 20px;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+.tombol a:hover {
+    background-color: cyan;
+}

@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: none;
+}
+page {
+    margin: 0;
+    width: 20.25cm;
+    min-height: 29.6cm;
+    display: flex;
+    align-items: center;
+}
+table {
+    border-collapse: collapse;
+    position: absolute;
+    top: 6.5cm;
+    left: 50%;
+    transform: translateX(-50%);
+}
+table tr td {
+    padding: 10px;
+    font-size: 20px;
+    vertical-align: text-top;
+    text-align: justify;
+}
+table tr td:nth-child(3) {
+    width: 13cm;
+}
+.teks {
+    position: absolute;
+    bottom: 1cm;
+    width: 7cm;
+    height: 5cm;
+    font-size: 20px;
+    display: block;
+    align-items: center;
+    right: 0.5cm;
+}
+h1 {
+    width: 100%;
+    font-size: 30px;
+    position: absolute;
+    top: 5cm;
+    left: 50%;
+    transform: translateX(-50%);
+}
+p {
+    width: 100%;
+    font-family: 'sertifikat';
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: sertifikat;
+    src: url("../font/AdineKirnberg-Alternate.ttf");
+}
+
+.kop {
+    position: absolute;
+    display: block;
+    width: 20cm;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4.5cm;
+}
+.photo {
+    position: absolute;
+    display: block;
+    width: 4cm;
+    bottom: 0;
+    left: 20%;
+    transform: translateX(-50%);
+    height: 6cm;
+}
+
+a,
+.pesan {
+    display: none;
+}
+
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 1cm;
+        width: 21cm;
+        height: 29.7cm;
+    }
+}

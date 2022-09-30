@@ -1,0 +1,19 @@
+.header{
+    background-color: chartreuse;
+    position: relative;
+    
+}
+
+.header img {
+    display: block;
+    top: 0;
+    border-bottom: 5px solid black;
+    width: 100%;
+    
+}
+
+@media screen and (max-width: 575px) {
+    .header {
+        display: none;
+    }
+}

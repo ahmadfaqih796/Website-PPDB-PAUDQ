@@ -1,0 +1,135 @@
+.isi-form input[type=text],
+.isi-form input[type=number],
+.isi-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    resize: vertical;
+}
+.isi-form input[type=date],
+.isi-form select {
+    width: 125px;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    resize: vertical;
+}
+.isi-form input[type=file] {
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 50%;
+}
+.isi-form .tampil-gambar {
+    display: block;
+    width: 200px;
+}
+
+.isi-form label {
+    padding: 12px 0 12px 0;
+    display: block;
+}
+
+.isi-form button[type=submit],
+.isi-form input[type=submit] {
+    background-color: #00e490;
+    color: white;
+    margin: 10px 0px 0px 0px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+button[type=submit]:hover,
+input[type=submit]:hover {
+    background-color: #8cb98e;
+}
+
+.isi-form {
+    padding: 10px;
+    display: block;
+    width: 95%;
+    margin: 0 auto 0 auto;
+}
+
+.isi-form .baris {
+    display: flex;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    justify-content: space-around;
+}
+
+.isi-form .kolom-15 {
+    width: 20%;
+    margin-top: 6px;
+}
+.isi-form .kolom-75 {
+    width: 70%;
+    margin-top: 6px;
+}
+.isi-form select option{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+.isi-form img {
+    margin: 0;
+    width: 50%;
+}
+
+.pencarian {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto 10px auto;
+}
+.pencarian input[type=text] {
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+.pencarian button {
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px solid black;
+    width: 50px;
+    cursor: pointer;
+    background-color: burlywood;
+}
+@media screen and (max-width: 600px) {
+    .isi-form {
+        width: 95%;
+    }
+    .isi-form .baris {
+        width: 95%;
+        flex-direction: column;
+    }
+    input[type=file] {
+        width: 100%;
+    }
+    .isi-form .kolom-15 {
+        width: 100%;
+        margin: 5px 0 5px 0;
+    }
+    .isi-form .kolom-75 {
+        width: 92%;
+        margin: 5px 0 5px 0;
+    }
+    .isi-form label {
+        padding: 12px 12px 12px 0;
+    }
+    .isi-form img {
+        width: 100%;
+    }
+    .isi-form input[type=submit] {
+        margin-left: auto;
+        margin-right: 2.5%;
+        width: 100px;
+    }
+    .pencarian input[type=text] {
+        width: 65%;
+    }
+}

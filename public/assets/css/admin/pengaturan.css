@@ -1,0 +1,116 @@
+.pengaturan {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    padding: 0 0 10px 0;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+.pengaturan h2 {
+    margin: 10px 0 10px 0;
+}
+.pengaturan input[type=text],
+.pengaturan input[type=password] {
+    padding: 12px;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 50%;
+}
+.pengaturan img {
+    width: 80%;
+    margin: 10px 0 10px 0;
+}
+.pengaturan button[type=submit],
+.pengaturan input[type=submit] {
+    background-color: #00e490;
+    color: white;
+    margin: 10px 0px 0px 0px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+.pengaturan button[type=submit]:hover,
+.pengaturan input[type=submit]:hover {
+    background-color: #8cb98e;
+}
+
+.tidak-valid {
+    border: 1px solid red;
+    background-color:rgb(252, 209, 209);
+}
+.tidak-valid-feedback {
+    font-size: 12px;
+    color: red;
+}
+
+.input-checkbox {
+	position: relative;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.input-checkbox input {
+	display: inline-block;
+	position: relative;
+	width: 40px;
+	height: 15px;
+}
+
+.input-checkbox input::before {
+	content: "";
+	display: inline-block;
+	position: relative;
+	width: 40px;
+	height: 13px;
+	background: #fff;
+	border: 2px solid black;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+}
+
+.input-checkbox input::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 11px;
+	height: 11px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	background: #eee;
+	left: 3px;
+	top: 3px;
+	transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-khtml-transition: 0.3s;
+}
+
+.input-checkbox input:checked::after {
+	left: 27px;
+	background: #0010f1;
+}
+
+/*posisi leftnya dikira-kira aja sesuai kebutuhan~
+warna background diubah ke warna yang berwarna sbg pertanda
+checkbox tersebut aktif*/
+
+.input-checkbox span {
+	height: 50px;
+	width: 100%;
+
+	font-size: 18px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .pengaturan {
+        width: 80%;
+    }
+    .pengaturan input[type=text],
+    .pengaturan input[type=password] {
+        width: 80%;
+    }
+}

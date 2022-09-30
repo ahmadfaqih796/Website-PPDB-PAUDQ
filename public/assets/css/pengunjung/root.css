@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif, 'Pacifico';
+    overflow-x: hidden;
+    background-image: url('../../gambar/atribut/hijau-daun-low.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: 100% 100%;
+}
+/* flex */
+.flex {
+    justify-content: center;
+    flex: 100%;
+    flex-wrap: wrap;
+    display: flex;
+}
+.flex img {
+    width: 100px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+.flex .panjang-text {
+    padding: 10px;
+    width: 65%;
+    text-align: justify;
+    overflow: hidden;
+    height: 50px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+@font-face {
+    font-family: daun;
+    src: url(../../font/Floral.otf);
+}
+
+@media screen and (max-width : 880px){
+    body {
+        background-size: cover;
+    }
+}
+@media screen and (max-width : 575px){
+    .flex img {
+        width: 60%;
+    }
+    .flex .panjang-text {
+        width: 95%;
+    }
+}

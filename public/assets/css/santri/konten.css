@@ -1,0 +1,134 @@
+.konten {
+    width: 65%;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 20px;
+    display: block;
+    float: left;
+    margin-left: 3%;
+    transition: all 1s;
+    margin-right: 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    z-index: -2;
+}
+
+.konten legend {
+    text-align: center;  
+    margin-top: -175px;
+    margin-bottom: 40px;
+    width: 100%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+}
+
+.konten p {
+    text-align: justify;
+    font-size: 18px;
+    /* atas kanan bawah kiri */
+    margin: 10px;
+}
+
+.konten ol {
+    margin: 10px 0 0 35px;
+    text-align: justify;
+}
+
+.konten img.judul {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -155px;
+    width: 350px;
+    height: 300px;
+}
+
+/* kotak */
+.konten .kotak {
+    background-color: yellow;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.konten hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.konten .kotak .banner {
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.konten .kotak .tombol {
+    display: block;
+    width: 100px;
+    text-decoration: none;
+    background-color: green;
+    /* atas kanan bawah kiri */
+    padding: 10px 30px 10px 30px;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    color: white;
+    border: 5px solid blueviolet;
+    transition: all 0.5s;
+}
+.konten .kotak .tombol:hover {
+    border: 5px solid black;
+    border-radius: 50px;
+    font-style: italic;
+}
+
+/* Tabel */
+.konten table {
+    border-collapse: collapse;
+    margin: 20px auto 20px auto;
+}
+
+.konten table tr th,
+.konten table tr td {
+    border: 3px solid black;
+    padding: 15px;
+    text-align: center;
+}
+
+.konten table tr td img{
+    width: 100%;
+}
+
+/* Tabel Konten */
+.konten .tabel-konten {
+    margin-top: 0;
+}
+
+.konten .tabel-konten tr td {
+    padding: 5px;
+    text-align: justify;
+    vertical-align: top;
+    border: 0px;
+}
+
+@media screen and (max-width : 880px ) {
+    .konten {
+        width: 95%;
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .konten {
+        margin-top: 150px;
+        width: 95%;
+    }
+    .konten .kotak .banner {
+        width: 100%;
+    }
+}

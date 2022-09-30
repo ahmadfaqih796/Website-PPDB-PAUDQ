@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    background-image: url("../../gambar/atribut/pemandangan.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+img {
+    width: 0;
+}
+p,h1,table,.teks {
+    font-size: 0;
+}
+.pesan {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 95%;
+    transform: translate(-50%, -50%);
+    background-color: snow;
+    opacity: 0.9;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 20px;
+    animation: animasi 1s;
+}
+a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: chartreuse;
+    border: 3px solid black;
+    border-radius: 20px;
+    color: black;
+    font-size: 40pt;
+    transition: all 0.5s ease-in-out;
+}
+a:hover {
+    background-color: cyan;
+}
+h3 {
+    font-size: 0;
+}
+@keyframes animasi {
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+    100% {
+        top: 50%;
+        opacity: 1;
+    }
+}
+@font-face {
+    font-family: sertifikat;
+    src: url("AdineKirnberg-Alternate.ttf");
+}
